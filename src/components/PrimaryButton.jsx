@@ -1,11 +1,12 @@
 import React from 'react';
-import WhatsAppIcon from '../assets/WhatsAppIcon.png';
 
-const PrimaryButton = ({ text, background, color }) => {
+const PrimaryButton = ({ text, icon, background, color }) => {
   return (
-    <div className={`flex items-center justify-center p-2 rounded bg-${color}`}>
-      <img src={WhatsAppIcon} alt={'WhatsApp'} width={32} height={32} />
-      <a className={`ml-2 font-bold text-[1rem] text-${background}`}>{text}</a>
+    <div
+      className={`flex items-center justify-center p-2 rounded bg-[#D0EA83]`}
+    >
+      <img src={icon} alt={text} width={32} height={32} />
+      <a className={`ml-2 font-bold text-[1rem] text-${color}`}>{text}</a>
     </div>
   );
 };
