@@ -3,6 +3,7 @@ import Logo from './Logo';
 import HamburgerIcon from '../assets/HamburgerIcon.png';
 import CrossIcon from '../assets/CrossIcon.png';
 import MobileMenuItem from './MobileMenuItem';
+import MobileMenuItemWrapper from './MobileMenuItemWrapper';
 
 const Navbar = () => {
   const [openNavBar, setOpenNavBar] = useState(false);
@@ -27,15 +28,15 @@ const Navbar = () => {
         )}
       </nav>
       {openNavBar ? (
-        <div className="">
-          <ul className="flex flex-col items-center justify-center">
+        <div className="min-h-[100vh]">
+          <MobileMenuItemWrapper>
             <MobileMenuItem text="Home" />
             <MobileMenuItem text="Services" />
             <MobileMenuItem text="Portfolio" />
             <MobileMenuItem text="Testimonials" />
             <MobileMenuItem text="FAQs" />
             <MobileMenuItem text="Contact" />
-          </ul>
+          </MobileMenuItemWrapper>
         </div>
       ) : null}
     </>
