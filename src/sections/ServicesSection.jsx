@@ -9,7 +9,7 @@ import MarketingIcon from '../assets/MarketingIcon.png';
 
 const ServicesSection = () => {
   return (
-    <section className="min-h-[100vh] bg-lightYellow">
+    <section id="Services" className="min-h-[100vh] bg-lightYellow">
       <div className="pt-[3em]">
         <SubHeading text="Services" />
       </div>
