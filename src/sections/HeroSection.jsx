@@ -13,6 +13,10 @@ import MainHeading from '../components/MainHeading';
 import SocialMediaIconWrapper from '../components/SocialMediaIconWrapper';
 
 const HeroSection = () => {
+  const openWhatsApp = () => {
+    // window.open('https://api.whatsapp.com/send?phone=+923151467374', '_blank');
+    window.open('https://wa.me/+923151467374', '_blank');
+  };
   return (
     <section id="Home" className="bg-darkGreen min-h-[100vh]">
       <Navbar />
@@ -61,7 +65,7 @@ const HeroSection = () => {
               </a>
             </li>
           </SocialMediaIconWrapper>
-          <div className="my-8">
+          <div className="cursor-pointer my-8" onClick={openWhatsApp}>
             <PrimaryButton
               text="Let's Chat"
               icon={WhatsAppIcon}
