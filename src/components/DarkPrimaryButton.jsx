@@ -3,10 +3,14 @@ import React from 'react';
 const DarkPrimaryButton = ({ text, icon }) => {
   return (
     <div
-      className={`flex items-center justify-center p-2 rounded bg-darkGreen`}
+      className={`w-full md:w-[200px] flex items-center justify-center p-4 rounded bg-darkGreen`}
     >
-      <img src={icon} alt={text} width={32} height={32} />
-      <a className={`ml-2 font-bold text-[1rem] text-lightGreen`}>{text}</a>
+      <img src={icon} alt={text} width={24} height={24} />
+      <a
+        className={`ml-2 font-bold text-[1rem] text-lightGreen hover:underline`}
+      >
+        {text}
+      </a>
     </div>
   );
 };
