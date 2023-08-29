@@ -12,10 +12,11 @@ import WhatsAppIcon from '../assets/WhatsAppIcon.png';
 import KnowMoreIcon from '../assets/KnowMoreIcon.png';
 import MainHeading from '../components/MainHeading';
 import SocialMediaIconWrapper from '../components/SocialMediaIconWrapper';
+import MyPicture from '../components/MyPicture';
 
 const HeroSection = () => {
   return (
-    <header id="Home" className="bg-darkGreen min-h-[100vh]">
+    <header id="Home" className="bg-darkGreen min-h-[100vh] bg-gradient-to-tr">
       <div className="max-w-[1200px] mx-auto">
         <Navbar />
         <div className="flex flex-col items-center justify-between md:mt-[3em] md:flex-row">
@@ -56,12 +57,13 @@ const HeroSection = () => {
               <SecondaryButton text="Know More" icon={KnowMoreIcon} />
             </div>
           </div>
-          <div id="right-side" className="p-4">
-            <img
-              src={ProfilePicture}
+          <div
+            id="right-side"
+            className="p-4 w-[300px] h-[300px] md:w-[450px] md:h-[450px]"
+          >
+            <MyPicture
+              img={ProfilePicture}
               alt="Zain Sadaqat Profile Picture"
-              width={400}
-              height={400}
             />
           </div>
         </div>
