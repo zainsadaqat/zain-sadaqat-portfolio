@@ -15,15 +15,19 @@ const Footer = () => {
           <div>
             <Logo />
           </div>
-          <div>
-            <p className="text-[#fff] my-4">
+          <div className="text-center md:text-left text-[0.75rem]">
+            <a
+              href="mailto:contact@zainsadaqat.com"
+              className="text-[#fff] my-4"
+            >
               <span className="text-[#878787]">Mail to: </span>
               <span className="hover:underline">contact@zainsadaqat.com</span>
-            </p>
-            <p className="text-[#fff] my-4">
+            </a>
+            <br />
+            <a href="tel:+923151467374" className="text-[#fff] my-4">
               <span className="text-[#878787]">Phone # </span>
               <span className="hover:underline">+92 315 146 7374</span>
-            </p>
+            </a>
           </div>
         </div>
         <div>
@@ -70,13 +74,15 @@ const Footer = () => {
             </li>
           </SocialMediaIconWrapper>
         </div>
-        <p className="text-[#fff] pb-8">
-          <p>Offering my services to the 🌏 with ❤️ from 🇵🇰</p>
-          <p>
+        <div className="text-[#fff] text-center md:text-left py-8">
+          <p className="text-[0.75rem]">
+            Offering my services to the 🌏 with ❤️ from 🇵🇰
+          </p>
+          <p className="text-[0.75rem] mt-4">
             &copy;
             {new Date().getFullYear()} Zain Sadaqat!
           </p>
-        </p>
+        </div>
       </div>
     </footer>
   );

@@ -10,7 +10,7 @@ const FAQ = ({ question, answer }) => {
   };
   return (
     <div onClick={handleClick}>
-      <div className="max-w-[1000px] mx-auto">
+      <div className="max-w-[1000px] mx-auto my-16">
         <div className="mt-8 flex items-center justify-between">
           <h3 className="font-['Work Sans] font-semibold text-[1rem]">
             {question}

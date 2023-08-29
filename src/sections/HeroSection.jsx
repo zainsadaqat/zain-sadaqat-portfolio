@@ -59,7 +59,7 @@ const HeroSection = () => {
           </div>
           <div
             id="right-side"
-            className="p-4 w-[300px] h-[300px] md:w-[450px] md:h-[450px]"
+            className="p-4 my-8 w-[300px] h-[300px] md:w-[450px] md:h-[450px]"
           >
             <MyPicture
               img={ProfilePicture}
