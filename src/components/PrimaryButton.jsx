@@ -6,10 +6,10 @@ const PrimaryButton = ({ text, icon }) => {
   };
   return (
     <div
-      className={`w-full md:w-[200px] flex items-center justify-center p-2 rounded bg-[#D0EA83]`}
+      className={`w-full md:w-[200px] flex items-center justify-center p-4 rounded bg-[#D0EA83] animate-bounce`}
       onClick={openWhatsApp}
     >
-      <img src={icon} alt={text} width={32} height={32} />
+      <img src={icon} alt={text} width={24} height={24} />
       <a className={`ml-2 font-bold text-[1rem] text-darkGreen`}>{text}</a>
     </div>
   );
