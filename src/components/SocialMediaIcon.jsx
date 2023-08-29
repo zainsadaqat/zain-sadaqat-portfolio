@@ -2,7 +2,7 @@ import React from 'react';
 
 const SocialMediaIcon = ({ img, alt, link, width, height }) => {
   return (
-    <li className="mr-8">
+    <li className="mr-8 hover:animate-pulse">
       <a href={link}>
         <img
           className="rounded"
