@@ -40,7 +40,7 @@ const Navbar = () => {
         )}
       </div>
       {openNavBar ? (
-        <div className="min-h-[100vh]">
+        <div onClick={() => setOpenNavBar(false)} className="min-h-[100vh]">
           <MobileMenuItemWrapper>
             <MobileMenuItem text="Home" />
             <MobileMenuItem text="Services" />
