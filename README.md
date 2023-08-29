@@ -9,6 +9,8 @@ https://zainsadaqat.com
 Explore my projects to see how I've translated innovative ideas into dynamic web applications and intuitive user interfaces. From coding robust solutions to designing visually captivating interfaces, I'm dedicated to delivering excellence.
 
 ## Website Image
+<img width="1440" alt="Screenshot 2023-08-30 at 12 26 06 AM" src="https://github.com/zainsadaqat/zain-sadaqat-portfolio/assets/83048208/4f867844-518d-486f-9eed-c4ff039fb0f0">
+
 
 ## Tech Stack
 
