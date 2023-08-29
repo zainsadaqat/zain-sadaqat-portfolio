@@ -6,12 +6,13 @@ import SourceCodeIcon from '../assets/SourceCodeIcon.png';
 import DarkPrimaryButton from './DarkPrimaryButton';
 import DarkSecondaryButton from './DarkSecondaryButton';
 import ProjectImage from '../assets/ProfilePicture.png';
+import MyPicture from './MyPicture';
 
 const ProjectCard = () => {
   return (
     <article>
-      <div>
-        <div id="left-side">
+      <div className="flex flex-col items-center justify-center md:flex-row md:justify-evenly">
+        <div id="left-side" className="">
           <ProjectTitle text="Project Name1" />
           <div className="mt-4">
             <ProjectDescription
@@ -21,13 +22,17 @@ const ProjectCard = () => {
         make a type specimen book."
             />
           </div>
-          <div className="mt-8">
+          <div className="flex flex-col items-center md:flex-row mt-8">
             <DarkPrimaryButton text="Live Demo" icon={LiveIcon} />
             <DarkSecondaryButton text="Source Code" icon={SourceCodeIcon} />
           </div>
         </div>
-        <div id="right-side" className="mt-4">
-          <img src={ProjectImage} alt="Project" width={100} />
+        <div
+          id="right-side"
+          className="w-[300px] h-[300px] bg-lightGreen border-2 my-8"
+        >
+          {/* Project Image comes here... */}
+          <div className="w-full h-full"></div>
         </div>
       </div>
     </article>
