@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div
       onClick={handleClick}
-      className="fixed bottom-4 right-4 p-2 bg-blue-500 rounded-full cursor-pointer"
+      className="fixed bottom-4 right-4 z-10 p-2 bg-blue-500 rounded-full cursor-pointer"
     >
       <div className="rounded p-2 border-2">
         <svg
