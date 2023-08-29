@@ -1,9 +1,16 @@
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 
 const SubTitle = ({ text }) => {
   return (
     <h3 className="text-[1rem] text-center font-semibold text-darkGreen font-['Raleway']">
-      {text}
+      <Typewriter
+        options={{
+          strings: [text],
+          autoStart: true,
+          loop: true,
+        }}
+      />
     </h3>
   );
 };
