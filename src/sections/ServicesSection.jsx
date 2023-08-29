@@ -10,18 +10,20 @@ import MarketingIcon from '../assets/MarketingIcon.png';
 const ServicesSection = () => {
   return (
     <section id="Services" className="min-h-[100vh] bg-lightYellow">
-      <div className="pt-[3em]">
-        <SubHeading text="Services" />
-      </div>
-      <SubTitle text="Here’re the services, I'm providing!" />
-      <div
-        className="py-8 
-      flex justify-center items-center flex-wrap"
-      >
-        <Service icon={WebIcon} text="Web Development" />
-        <Service icon={DesignIcon} text="Web Design" />
-        <Service icon={MobileIcon} text="Mobile App Design" />
-        <Service icon={MarketingIcon} text="Digital Marketing" />
+      <div className="max-w-[1200px] mx-auto">
+        <div className="pt-[3em]">
+          <SubHeading text="Services" />
+        </div>
+        <SubTitle text="Here’re the services, I'm providing!" />
+        <div
+          className="mt-8 p-8 
+        flex justify-center items-center flex-wrap"
+        >
+          <Service icon={WebIcon} text="Web Development" />
+          <Service icon={DesignIcon} text="Web Design" />
+          <Service icon={MobileIcon} text="Mobile App Design" />
+          <Service icon={MarketingIcon} text="Digital Marketing" />
+        </div>
       </div>
     </section>
   );
