@@ -54,7 +54,7 @@ const HeroSection = () => {
             </SocialMediaIconWrapper>
             <div className="flex flex-col items-center justify-start md:flex-row cursor-pointer my-8">
               <PrimaryButton text="Let's Chat" icon={WhatsAppIcon} />
-              <SecondaryButton text="Know More" icon={KnowMoreIcon} />
+              <SecondaryButton text="Schedule a Meeting" icon={KnowMoreIcon} />
             </div>
           </div>
           <div

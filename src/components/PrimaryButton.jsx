@@ -6,6 +6,7 @@ const PrimaryButton = ({ text, icon }) => {
   };
   return (
     <div
+      id="service-box"
       className={`w-full md:w-[200px] flex items-center justify-center p-4 rounded bg-[#D0EA83] animate-bounce`}
       onClick={openWhatsApp}
     >
