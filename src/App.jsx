@@ -6,6 +6,7 @@ import PortfolioSection from './sections/PortfolioSection';
 import TestimonialsSection from './sections/TestimonialsSection';
 import FAQSection from './sections/FAQSection';
 import Footer from './sections/Footer';
+import AppointmentSection from './sections/AppointmentSection';
 function App() {
   return (
     <React.Fragment>
@@ -14,6 +15,7 @@ function App() {
       <PortfolioSection />
       <TestimonialsSection />
       <FAQSection />
+      <AppointmentSection />
       <Footer />
     </React.Fragment>
   );
