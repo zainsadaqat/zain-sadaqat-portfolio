@@ -8,31 +8,30 @@ import DarkSecondaryButton from './DarkSecondaryButton';
 import ProjectImage from '../assets/ProfilePicture.png';
 import MyPicture from './MyPicture';
 
-const ProjectCard = () => {
+const ProjectCard = ({ name, desc, img, liveLink, sourceCode, reverse }) => {
   return (
     <article>
-      <div className="flex flex-col items-center justify-center md:flex-row md:justify-evenly">
+      <div
+        className={`flex flex-col items-center justify-center ${
+          reverse ? 'md:flex-row-reverse' : 'md:flex-row'
+        } md:justify-evenly`}
+      >
         <div id="left-side" className="">
-          <ProjectTitle text="Project Name1" />
+          <ProjectTitle text={name} />
           <div className="mt-4">
-            <ProjectDescription
-              text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book."
-            />
+            <ProjectDescription text={desc} />
           </div>
           <div className="flex flex-col items-center md:flex-row mt-8">
             <DarkPrimaryButton text="Live Demo" icon={LiveIcon} />
             <DarkSecondaryButton text="Source Code" icon={SourceCodeIcon} />
           </div>
         </div>
-        <div
-          id="right-side"
-          className="w-[300px] h-[300px] bg-lightGreen border-2 my-8"
-        >
-          {/* Project Image comes here... */}
-          <div className="w-full h-full"></div>
+        <div id="right-side" className="max-w-[100%] my-8 mx-auto">
+          <img
+            src={img}
+            alt="SpaceX Adventures Project"
+            className="w-full object-contain"
+          />
         </div>
       </div>
     </article>
