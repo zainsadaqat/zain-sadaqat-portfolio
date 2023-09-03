@@ -25,6 +25,7 @@ const Navbar = () => {
             <DesktopMenuItem text="Portfolio" />
             <DesktopMenuItem text="Testimonials" />
             <DesktopMenuItem text="FAQs" />
+            <DesktopMenuItem text="Schedule a Meeting" />
             <DesktopMenuItem text="Contact" />
           </ul>
         </div>
@@ -47,6 +48,7 @@ const Navbar = () => {
             <MobileMenuItem text="Portfolio" />
             <MobileMenuItem text="Testimonials" />
             <MobileMenuItem text="FAQs" />
+            <MobileMenuItem text="Schedule a Meeting" />
             <MobileMenuItem text="Contact" />
           </MobileMenuItemWrapper>
         </div>
