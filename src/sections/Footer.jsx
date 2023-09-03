@@ -15,22 +15,22 @@ const Footer = () => {
           <div>
             <Logo />
           </div>
-          <div className="text-center md:text-left text-[0.75rem]">
+          <div className="my-4 text-center md:text-left text-[0.75rem]">
             <a
               href="mailto:contact@zainsadaqat.com"
-              className="text-[#fff] my-4"
+              className="text-[#fff] block"
             >
               <span className="text-[#878787]">Mail to: </span>
               <span className="hover:underline">contact@zainsadaqat.com</span>
             </a>
             <br />
-            <a href="tel:+923151467374" className="text-[#fff] my-4">
+            <a href="tel:+923151467374" className="text-[#fff] block">
               <span className="text-[#878787]">Phone # </span>
               <span className="hover:underline">+92 315 146 7374</span>
             </a>
           </div>
         </div>
-        <div>
+        <div className="my-8">
           <SocialMediaIconWrapper>
             <li>
               <a href="https://www.twitter.com/zain_sadaqat">
