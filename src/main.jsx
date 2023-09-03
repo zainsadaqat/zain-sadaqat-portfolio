@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
+import ReactGA4 from 'react-ga4';
+ReactGA4.initialize('G-N7M2FJYQEJ');
 
 const handleClick = () => {
   window.scrollTo({
