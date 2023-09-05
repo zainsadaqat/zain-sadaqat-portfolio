@@ -6,7 +6,14 @@ const MainHeading = () => {
     <h1 className="text-[2.25rem] font-semibold text-lightGreen font-['Raleway'] md:text-[3rem]">
       Hey, <br />
       I’m Zain Sadaqat, <br />
-      <Typewriter
+      Full Stack Software Engineer.
+    </h1>
+  );
+};
+
+export default MainHeading;
+{
+  /* <Typewriter
         options={{
           strings: [
             'A Full Stack Web Developer.',
@@ -17,9 +24,5 @@ const MainHeading = () => {
           autoStart: true,
           loop: true,
         }}
-      />
-    </h1>
-  );
-};
-
-export default MainHeading;
+      /> */
+}
