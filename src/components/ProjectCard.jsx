@@ -22,18 +22,22 @@ const ProjectCard = ({ name, desc, img, liveLink, sourceCode, reverse }) => {
             <ProjectDescription text={desc} />
           </div>
           <div className="flex flex-col items-center md:flex-row mt-8">
-            <DarkPrimaryButton text="Live Demo" icon={LiveIcon} />
-            <DarkSecondaryButton text="Source Code" icon={SourceCodeIcon} />
+            <a href={liveLink} target="_blank" className="w-full md:w-auto">
+              <DarkPrimaryButton text="Live Demo" icon={LiveIcon} />
+            </a>
+            <a href={sourceCode} target="_blank" className="w-full md:w-auto">
+              <DarkSecondaryButton text="Source Code" icon={SourceCodeIcon} />
+            </a>
           </div>
         </div>
         <div
           id="right-side"
-          className="max-w-[100%] max-h-[100%] m-8 md:m-0 border-2"
+          className="max-w-[100%] max-h-[100%] m-8 md:m-0 border-2 hover:border-4"
         >
           <img
             src={img}
             alt="SpaceX Adventures Project"
-            className="w-[500px] h-[300px] object-cover"
+            className="w-[600px] h-auto object-cover hover:object-contain"
           />
         </div>
       </div>
