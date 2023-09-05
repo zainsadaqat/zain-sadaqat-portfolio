@@ -3,7 +3,7 @@ import React from 'react';
 const DarkPrimaryButton = ({ text, icon }) => {
   return (
     <div
-      className={`w-full md:w-[200px] flex items-center justify-center p-4 rounded bg-darkGreen`}
+      className={`w-full md:w-[220px] flex items-center justify-center p-4 rounded bg-darkGreen`}
     >
       <img src={icon} alt={text} width={24} height={24} />
       <a
