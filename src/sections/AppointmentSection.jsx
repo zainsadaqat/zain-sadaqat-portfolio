@@ -17,7 +17,7 @@ const AppointmentSection = () => {
         <div
           class="calendly-inline-widget"
           data-url="https://calendly.com/zain_sadaqat/30min"
-          style={{ minWidth: '320px' }}
+          style={{ Width: '320px' }}
         >
           <iframe
             src="https://calendly.com/zain_sadaqat/30min"
