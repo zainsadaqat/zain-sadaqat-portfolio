@@ -7,7 +7,7 @@ const PrimaryButton = ({ text, icon }) => {
   return (
     <div
       id="service-box"
-      className={`w-full md:w-[200px] flex items-center justify-center p-4 rounded bg-[#D0EA83] animate-bounce`}
+      className={`w-full md:w-[200px] flex items-center justify-center p-4 rounded bg-[#D0EA83]`}
       onClick={openWhatsApp}
     >
       <img src={icon} alt={text} width={24} height={24} />
