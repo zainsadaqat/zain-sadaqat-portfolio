@@ -22,36 +22,6 @@ const HeroSection = () => {
         <div className="flex flex-col items-center justify-between md:mt-[3em] md:flex-row">
           <div id="left-side" className="p-4">
             <MainHeading />
-            <SocialMediaIconWrapper>
-              <SocialMediaIcon
-                img={XIcon}
-                alt="Zain Sadaqat Twitter profile"
-                link="https://www.twitter.com/zain_sadaqat"
-                width={32}
-                height={32}
-              />
-              <SocialMediaIcon
-                img={InstagramIcon}
-                alt="Zain Sadaqat Instagram account"
-                link="https://www.instagram.com/zainsadaqat.com"
-                width={32}
-                height={32}
-              />
-              <SocialMediaIcon
-                img={LinkedInIcon}
-                alt="Zain Sadaqat LinkedIn profile"
-                link="https://www.linkedin.com/in/zain-sadaqat/"
-                width={32}
-                height={32}
-              />
-              <SocialMediaIcon
-                img={GitHubIcon}
-                alt="Zain Sadaqat GitHub account"
-                link="https://github.com/zainsadaqat"
-                width={32}
-                height={32}
-              />
-            </SocialMediaIconWrapper>
             <div className="flex flex-col items-center justify-start md:flex-row cursor-pointer my-8">
               <PrimaryButton text="Let's Chat" icon={WhatsAppIcon} />
               <SecondaryButton text="Schedule a Meeting" icon={KnowMoreIcon} />
@@ -63,7 +33,7 @@ const HeroSection = () => {
           >
             <MyPicture
               img={ProfilePicture}
-              alt="Zain Sadaqat Profile Picture"
+              alt="This is a Profile Picture of Zain Sadaqat who's a Software Engineer and Full Stack Web Developer"
             />
           </div>
         </div>
